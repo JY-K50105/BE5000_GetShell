@@ -73,6 +73,10 @@ Special thanks to Bhao for the original research and documentation:
 特别感谢 Bhao 的原创研究和文档：  
 [https://dwd.moe/p/mi-router-be5000.html](https://dwd.moe/p/mi-router-be5000.html)
 
+Thanks to lschg for providing a solution to the Windows encoding issue:
+感谢 lschg 提供的 Windows 编码问题解决方案：
+[https://github.com/z-jack/BE5000_GetShell/issues/5](https://github.com/z-jack/BE5000_GetShell/issues/5)
+
 ## Technical Details / 技术细节
 
 The tool uses a command injection vulnerability in the router's binding API endpoint. It deploys a modified dropbear SSH server and establishes persistence through the router's firewall configuration.
