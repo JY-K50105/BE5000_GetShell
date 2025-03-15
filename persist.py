@@ -6,6 +6,7 @@ import os
 import base64
 from urllib.parse import unquote
 import logging
+import sys  # 添加这行代码来导入sys模块
 
 # Disable default HTTP server logging
 logging.getLogger('http.server').setLevel(logging.CRITICAL)
