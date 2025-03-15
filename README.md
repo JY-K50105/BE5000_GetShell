@@ -12,6 +12,11 @@
 > This tool only tested with Python 3.8.20 on macOS, and may not work with other versions. Windows has known issues, use at your own risk.
 >
 > 本工具仅在 macOS 的 Python 3.8.20 上测试，其他版本可能无法正常工作。（Windows已知存在字符编码问题）
+> 请提前安装好以下模块
+
+```bash
+pip install requests -i https://mirrors.aliyun.com/pypi/simple
+```
 
 A tool designed to exploit vulnerabilities in Mi Router BE5000 with 1.0.53 firmware, enabling SSH access through command injection. The tool consists of three main components:
 - Initial exploitation and file transfer
